@@ -26,4 +26,5 @@ git commit -m "Reverted favorite movie and added favorite book to aboutMe.txt"
 vi git_commands_used
 git add .
 git commit -m "Added git_commands_used file"
+git remote add origin https://github.com/minokuchi/coding_dojo.git
 git push origin master
