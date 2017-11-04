@@ -1,0 +1,29 @@
+cd DojoAssignments/
+ls -la
+git status
+mkdir gittest
+cd gittest
+git init
+touch index.html styles.css aboutMe.txt
+git add .
+git commit -m "Added index.html styles.css aboutMe.txt"
+ls -la
+vi aboutMe.txt
+git add aboutMe.txt 
+git status
+git commit -m "Updated aboutMe.txt"
+vi aboutMe.txt
+git add .
+git commit -m "Added favorite movie to aboutMe.txt"
+git logs
+git log
+git help revert
+git revert 851e76cb0f6591aadc46d2eec19297c798ba28e0
+git status
+vi aboutMe.txt
+git add .
+git commit -m "Reverted favorite movie and added favorite book to aboutMe.txt"
+vi git_commands_used
+git add .
+git commit -m "Added git_commands_used file"
+git push origin master
