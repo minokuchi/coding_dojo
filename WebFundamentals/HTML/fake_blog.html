@@ -8,48 +8,99 @@
     </head>
 
     <body>
-            <form action="process.php" method="post">
-            <p>My Registration Form</p>
-            <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" name="first_name">
-           
-            <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name" name="last_name">
-           
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email">
-           
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password">
+        <form action="process.php" method="post">
+        <div id="main-content">
+            <h1>Twin Peaks Fake Blog</h1>
+
+            <img id="image" src="images/twin_peaks.jpeg" alt="Twin Peaks Title Page">
+
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus vehicula metus. Maecenas ut magna dignissim est sodales elementum. 
+            Suspendisse eu velit arcu. Curabitur malesuada metus et suscipit gravida. In et ligula sodales, vestibulum metus a, hendrerit neque. 
+            Curabitur sollicitudin laoreet metus, eget ultricies ipsum. Etiam vitae consectetur lorem, in dapibus justo. Vestibulum eu nisl 
+            placerat, pharetra diam ut, eleifend velit. Sed eget dignissim turpis. Suspendisse potenti. Maecenas at mollis sapien. Pellentesque 
+            pulvinar a nisi in bibendum. In pretium eu arcu a lobortis.</p>
+
+            <p>Nullam arcu erat, viverra at viverra et, tincidunt eu libero. Aliquam volutpat ante lectus, eu lobortis mauris pulvinar ut. 
+            Aenean in tortor nec sem finibus pretium. Proin condimentum dui magna, non viverra felis lobortis nec. Nullam non magna eget 
+            tortor molestie pretium vitae vel erat. Morbi convallis, urna sed aliquet iaculis, lorem diam bibendum risus, eget semper 
+            nulla mi sit amet risus. Aenean nunc enim, auctor vel erat ac, hendrerit aliquam nibh. Fusce ac metus ut magna laoreet 
+            volutpat non at mi. Quisque viverra eget ex dictum mattis. Proin arcu orci, dignissim id neque eget, molestie porttitor 
+            erat. Donec semper a justo sodales lacinia. Quisque ornare at nunc vitae aliquet. Duis scelerisque, nisi ac ornare pulvinar, 
+            dui eros lobortis augue, ut suscipit nisl tellus eget ligula. Duis fringilla, sem at fringilla tempus, nisi est suscipit 
+            orci, et fringilla risus tortor eget leo. Nam a auctor quam. Nam id mauris fringilla, eleifend dolor vitae, rutrum justo.</p>
+        </div>         
+        <table> 
+            <thead>
+                <tr>
+                    <th>Season</th>
+                    <th>Episodes</th>
+                    <th>First Aired</th>
+                    <th>Network</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>8</td>
+                    <td>April 8, 1990</td>
+                    <td>ABC</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>22</td>
+                    <td>September 30, 1990</td>
+                    <td>ABC</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>18</td>
+                    <td>May 21, 2017</td>
+                    <td>Showtime</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Main cast</h3>
+            <ul>
+                <li>Kyle MacLachlan as Special Agent Dale Cooper</li>
+                <li>Michael Ontkean as Sheriff Harry S. Truman</li>
+                <li>Mädchen Amick as Shelly Johnson</li>
+                <li>Dana Ashbrook as Bobby Briggs</li>
+                <li>Richard Beymer as Benjamin Horne</li>
+                <li>Lara Flynn Boyle as Donna Hayward</li>
+                <li>Sherilyn Fenn as Audrey Horne</li>
+                <li>Warren Frost as Dr. Will Hayward</li>
+                <li>Peggy Lipton as Norma Jennings</li>
+                <li>James Marshall as James Hurley</li>
+                <li>Everett McGill as Ed Hurley</li>
+                <li>Jack Nance as Pete Martell</li>
+                <li>Ray Wise as Leland Palmer</li>
+                <li>Joan Chen as Jocelyn Packard</li>
+                <li>Piper Laurie as Catherine Martell</li>
+                <li>Kimmy Robertson as Lucy Moran</li>
+            </ul>
+
+        <p>Please take this short survey</p>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+
+
+        <p>Email updates</p>
+        <input type="radio" id="yes" name="yes" value="yes">
+        <label for="yes">Yes, send me an email when the blog is updated</label>
+        <input type="radio" id="no" name="no" value="no">
+        <label for="no">No, don't send me an email. I get too much spam!</label>
+
+        <p> Favorite Season</p>
+        <select name="Favorite Season">
+            <option value="season 1">Season 1</option>
+            <option value="season 2">Season 2</option>
+            <option value="season 3">Season 3</option>
+        </select>
         
-            <label for="pw_confirm">PW Confirm</label>
-            <input type="password" id="pw_confirm" name="password_confirmation">
-        
-            <label for="birthday">Birthday</label>
-            <input type="date" id="birthday" name="date">
-        
-            <label for="male">Male</label>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="female">Female</label>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="other">Other</label>
-            <input type="radio" id="other" name="gender" value="other">
-        
-            <p>A short description obout yourself:</p>
-            <textarea name="description"></textarea>
-        
-            <p>Favorite Language</p>
-            <select name="Favorite Language">
-            <option value="C">C</option>
-            <option value="C#">C#</option>
-            <option value="Go">Go</option>
-            <option value="Java">Java</option>
-            <option value="JavaScript">JavaScript</option>
-            <option value="Python">Python</option>
-            <option value="R">R</option>
-            </select>
-        
-            <input type="submit" value="Submit">
+        <p>Please submit your choices</p>
+        <input type="submit" value="Submit">
         </form>
     </body>       
 </html>
