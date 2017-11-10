@@ -1,0 +1,43 @@
+body {
+    background-color: blue;
+    color:white;
+}
+header {
+    background-color: rgb(158, 93, 93);
+    display: inline-block;
+}    
+.search {
+    width: 200px;
+    length: 50px;
+    background-color:gray;
+    display: inline-block;
+}
+nav {
+    display: inline-block;
+}
+aside {
+    display: inline-block;
+    padding: 0px 5px 0px 185px;
+    font-size: 40px;
+    right: 30px;
+}
+main {
+    display:inline-block;
+    height: 200px;
+    width: 700px;
+}
+.poem {
+    display: inline-block;
+    border-color:gray;
+    width: 200px;
+    height: 100px;
+    border: 5px;
+}
+section {
+    height: 5px;
+    display: inline-block;
+}
+footer {
+    height: 5px;
+    display: inline-block;
+}
