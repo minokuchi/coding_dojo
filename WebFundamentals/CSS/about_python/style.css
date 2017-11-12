@@ -1,9 +1,9 @@
 body {
-    background-color: blue;
+    background-color: #3a719e;
     color:white;
+    width: 970px;
 }
 header {
-    background-color: rgb(158, 93, 93);
     display: inline-block;
 }    
 .search {
@@ -12,32 +12,114 @@ header {
     background-color:gray;
     display: inline-block;
 }
-nav {
+.nav ul{
+    diplay: inline;
+    background-color: rgb(147, 178, 240);
+    width: 850px;
+    text-align: center;
+}
+.nav li {
+    display: inline;
+    list-style-type: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+.nav a {
+    display: inline;
+    color:white;
+    text-decoration: none;
+}
+.section1 {
+    width: 950px;
+}
+.aside {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+.aside ul {
     display: inline-block;
 }
-aside {
-    display: inline-block;
-    padding: 0px 5px 0px 185px;
-    font-size: 40px;
-    right: 30px;
+.aside li {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
 }
-main {
-    display:inline-block;
-    height: 200px;
-    width: 700px;
+.aside a {
+    color:white;
+}
+.right_box {
+    display: inline-block;
+    width: 550px;
 }
 .poem {
     display: inline-block;
-    border-color:gray;
-    width: 200px;
-    height: 100px;
-    border: 5px;
 }
-section {
-    height: 5px;
+.poem ul{
+    text-align: center;
+}
+.poem li {
+    list-style-type: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: yellow;
+    margin: 10px;
+}
+.poem a {
+    display: inline;
+    text-decoration: none;
+}
+.section2 {
+    width: 950px;
+    background-color: white;
+}
+.section2_box {
+    text-align: center;
+    width: 440px;
     display: inline-block;
 }
-footer {
-    height: 5px;
+.section2_header {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
     display: inline-block;
+    padding: 0px 0px 0px 120px;
+}
+.section2_text {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    display: inline-block;
+    padding: 0px 0px 0px 50px;
+}
+.section2_list {
+    color: blue;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 0px 0px 50px;
+}
+}
+.footer {
+    width: 850px;
+}
+.footer_links {
+    width: 900px;
+    text-align: center;
+}
+.footer_links2 {
+    width: 900px;
+    text-align: center;
+}
+.footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+.footer a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin: 10px;
 }
