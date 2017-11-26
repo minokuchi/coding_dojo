@@ -1,0 +1,51 @@
+Assignment: Practice your pip
+This short assignment will help you understand pip and get accustomed to using the commands required to use pip modules.
+
+You will need to use your terminal to run these commands. Open up terminal, command prompt, or git bash to continue. 
+Run them in the order instructed. Your assignment submission should be a .txt file that includes a short explanation 
+of what you were able to learn about each command by doing a brief (1-2 min) web search for each term. If it is 
+relevant, include the output of your command and your understanding of what it means. It is important to always 
+read your terminal output and try to understand it.
+
+Run the following commands:
+
+pip install Django 
+    # install the package Django
+
+pip list
+    # list currently installed packages
+
+pip install Django (We know you already ran this one. What information do you see returned in terminal after this command?)
+    # marki-mbp:Python marki$ pip install Django
+    # Requirement already satisfied: Django in /anaconda/lib/python2.7/site-packages
+    # Requirement already satisfied: pytz in /anaconda/lib/python2.7/site-packages (from Django)
+
+pip freeze (What's the difference between freeze and list?)
+    # pip freeze uses a field separator of "==" to separate the version number from the package name
+    # While pip list uses white space and () to contain the version number
+    # pip freeze outputs installed packages in requirements format while pip list will not
+    # if you're using virtualenv there's a file called requirements.txt that includes dependencies
+    # In order for this to work your dependencies in the requirements.txt file was follow the requirements format
+
+First cd into your Desktop directory (cd ~/Desktop), then run this command: pip freeze > requirements.txt. 
+What do you see when you ls? What's inside this file?
+    # marki-mbp:Python marki$ pip freeze > requirements.txt
+    # marki-mbp:Python marki$ ls -la
+    # total 8
+    # drwxr-xr-x   4 marki  staff   136 Nov 26 13:20 .
+    # drwxr-xr-x  13 marki  staff   442 Nov  7 11:02 ..
+    # -rw-r--r--   1 marki  staff     0 Nov  4 15:38 about.txt
+    # -rw-r--r--   1 marki  staff  2780 Nov 26 13:20 requirements.txt
+    
+    # pip freeze output has been redirected to the file requirements.txt
+    # pip freeze output is in the file   
+    
+pip uninstall Django
+    # uninstalls package Django
+
+pip show Django
+    # Nothing is returned
+    # marki-mbp:Python marki$ pip show Django
+
+pip search Flask. This one might take a moment to execute.
+    # Returns the packages whose name or summary contains Flask
