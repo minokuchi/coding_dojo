@@ -1,0 +1,27 @@
+Multiples
+    Part I - Write code that prints all the odd numbers from 1 to 1000. Use the for loop and don't use a list to do this exercise.
+
+    for num in range(1,1001):    # range function generates a list of numbers from 1 to 1000.
+        if num % 2!= 0:          # A number that is divided by 2 and leaves 0 as a remainder is an even number. 
+            print(num)           # Therefore an odd number is the inverse of this.
+                                 # To accomplish this I use the modulo operator. If the remainder of the division is not 0 then print the number.
+    
+    Part II - Create another program that prints all the multiples of 5 from 5 to 1,000,000.
+    
+    for num in range(1,1000001):    # range function is used again to generate a list from 1 to 1000000.
+        if num % 5 is 0:            # Using the modulo operator a number which is divided by 5 and leaves a remainder of 0 is a multiple of 5.
+            print(num)
+    
+Sum List
+    Create a program that prints the sum of all the values in the list: a = [1, 2, 5, 10, 255, 3]
+    
+    a = [1, 2, 5, 10, 255, 3]
+    print "This sum total of 'a' is", sum(a)    # Used the built-in function "sum()" to sum the list.
+    
+Average List
+    Create a program that prints the average of the values in the list: a = [1, 2, 5, 10, 255, 3]
+    
+    a = [1, 2, 5, 10, 255, 3]
+    print "The sum of 'a' is", sum(a)
+    print "The length of 'a' is", len(a)
+    print "The average of 'a' is", (sum(a))/len(a)    # Used the sum() and len() functions to calculate the average of the list.
