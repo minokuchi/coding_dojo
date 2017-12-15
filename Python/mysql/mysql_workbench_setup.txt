@@ -1,0 +1,15 @@
+use twitter;
+show tables;
+select * from faves;
+select * from follows;
+select * from tweets;
+select * from users;
+INSERT INTO `twitter`.`users` (`id`, `first_name`, `last_name`, `birthday`) VALUES ('6', 'James', 'Worthy', '1961-02-27');
+INSERT INTO `twitter`.`users` (`id`, `first_name`, `last_name`, `birthday`) VALUES ('7', 'Jerry', 'West', '1938-05-28');
+INSERT INTO `twitter`.`users` (`id`, `first_name`, `last_name`, `birthday`) VALUES ('8', 'Wilt', 'Chamberlain', '1936-08-21');
+DELETE FROM `twitter`.`users` WHERE `id`='6';
+select id, first_name, last_name, birthday from users order by birthday desc LIMIT 0, 1000;
+select * from users 
+join tweets on users.id = tweets.user_id;
+select * from users join tweets on users.id = tweets.id;
+mysqldump --defaults-file="/var/folders/sc/_7btjmsm8xjffp0059b7qnw80000gn/T/tmp_cr7_K/extraparams.cnf"  --user=root --host=localhost --protocol=tcp --port=3306 --default-character-set=utf8 --skip-triggers "twitter"
