@@ -1,0 +1,21 @@
+(flask_mysql) marki-mbp:flask_mysql marki$ python server.py 
+Traceback (most recent call last):
+
+sqlalchemy.exc.OperationalError: (_mysql_exceptions.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)") (Background on this error at: http://sqlalche.me/e/e3q8)
+
+Fix: incorrect password
+
+    super(Connection, self).__init__(*args, **kwargs2)
+sqlalchemy.exc.OperationalError: (_mysql_exceptions.OperationalError) (1045, "Access denied for user 'root1'@'localhost' (using password: YES)") (Background on this error at: http://sqlalche.me/e/e3q8)
+
+Fix: incorrect username
+
+sqlalchemy.exc.OperationalError: (_mysql_exceptions.OperationalError) (2003, "Can't connect to MySQL server on '127.0.0.1' (61)") (Background on this error at: http://sqlalche.me/e/e3q8)
+
+Fix: incorrect port
+
+  File "/Users/marki/Desktop/Coding_Dojo/DojoAssignments/Python/mysql/flask_mysql/mysqlconnection.py", line 9, in __init__
+    'database': db2, # we got db as an argument
+NameError: global name 'db2' is not defined
+
+Fix: incorrect db name
